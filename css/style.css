@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+
+:root {
+    --lilas: #c8a2c8;
+    --verde-oliva: #b2c2a2;
+    --fundo-claro: #f5f5fa;
+    --texto-escuro: #333;
+    --fundo-input: #373f39;
+    --texto-claro: #fff;
+}
+
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--lilas);
+    margin-bottom: 0.5rem;
+  }
+
+ footer {
+    background: linear-gradient(to right, var(--lilas), var(--verde-oliva));
+    padding: 1rem 2rem;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  header {
+    display: flex;
+    justify-content: center; /* centraliza título */
+    align-items: center;
+    position: relative;
+    padding: 1rem 2rem;
+    background: linear-gradient(to right, var(--lilas), var(--verde-oliva));
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  .header-left {
+    position: absolute;
+    left: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hamburger {
+    cursor: pointer;
+    font-size: 1.8rem;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;   /* relativo ao .header-left */
+    top: 100%;            /* logo abaixo do ícone */
+    left: 0;
+    margin-top: 0.5rem;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  
+  .dropdown-menu a {
+    color: white;
+    padding: 0.5rem 1rem;
+    display: block;
+    text-decoration: none;
+  }
+  
+  .dropdown-menu a:last-child {
+    border-bottom: none;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: var(--verde-oliva);
+    color: white;
+  }
+
+  /* Modal geral */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  position: relative;
+  background-color: white;
+  max-width: 90%;
+  max-height: 90%;
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.modal-content iframe,
+.modal-content img,
+.modal-content video {
+  width: 100%;
+  height: 100%;
+  max-height: 70vh;
+  border: none;
+  border-radius: 12px;
+}
+
+/* Botão de fechar estilizado */
+.modal .close {
+  position: absolute;
+  top: -0.1rem;
+  right: 0rem;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--verde-oliva);
+  background: rgba(255,255,255,0.9);
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal .close:hover {
+  color: var(--lilas);
+}
+
+  
+  /* Responsividade: se quiser esconder o menu em desktop e mostrar só no mobile */
+  @media(min-width: 768px) {
+    .dropdown-menu {
+      display: none; /* esconder menu no desktop por enquanto */
+    }
+  }
+  
+
+*{
+    font-family: "Poppins", sans-serif;
+}

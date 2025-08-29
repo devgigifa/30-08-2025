@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GN - Nossas memórias</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="menuhamb.js"></script>
+    <script src="gallery.js"></script>
+
+</head>
+<header>
+  <div class="header-left">
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="dropdown-menu">
+      <a href="main.html">Início</a>
+      <a href="gallery.html">Galeria</a>
+    </div>
+  </div>
+  <div class="header-center">∞♡ Nossas Memórias ♡∞</div>
+</header>
+
+<body>
+  <main>
+    <h1>Galeria de Fotos</h1>
+    <div class="filters">
+      <input type="text" id="nameFilter" placeholder="Filtrar por nome..." />
+      <input type="date" id="dateFilter" placeholder="Filtrar por data..." />
+    </div>
+
+    <div class="gallery" id="gallery"></div>
+    <div id="albums"></div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <img id="modalImg" src="" alt="Foto ampliada" />
+        <div class="info" id="modalInfo"></div>
+      </div>
+    </div>
+  </main>
+</body>
+<footer>2023-2025 | 2 anos <br>∞♡ Giovanna e Nicolas ♡∞</footer>
+
+</html>

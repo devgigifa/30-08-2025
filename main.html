@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GN - Nossas memórias</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="menuhamb.js"></script>
+
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <div class="dropdown-menu">
+        <a href="main.html">Início</a>
+        <a href="gallery.html">Galeria</a>
+      </div>
+    </div>
+    <div class="header-center">∞♡ Nossas Memórias ♡∞</div>
+  </header>
+  
+  
+  <main>
+    <img src="images/IMG_20250525_122147454~2.jpg" alt="">
+    <section>
+      <h2 class="section-title">Fotos</h2>
+      <div class="carousel-wrapper">
+        <button class="carousel-nav left" onclick="scrollCarousel('fotos', -1)">&#8592;</button>
+        <div class="carousel" id="carousel-fotos">
+          <div class="carousel-card">
+            <img src="images/Screenshot_20231218_140058_Instagram.jpg" >
+            <p>Subimos pra BC</p>
+            <p>17/09/2023</p>
+          </div>
+          <div class="carousel-card">
+            <img src="images/20240811.jpg">
+            <p>Dia em Sambaqui</p>
+            <p>11/08/2024</p>
+          </div>
+          <div class="carousel-card">
+            <img src="images/IMG_20250111_154035148.jpg">
+            <p>Dia no Shop</p>
+            <p>11/01/2025</p>
+          </div>
+          <div class="carousel-card">
+            <img src="images/IMG-20240630-WA0005.jpg">
+            <p>Dia no parque da Luz</p>
+            <p>30/06/2024</p>
+          </div>
+          <div class="carousel-card" onclick="window.location.href='gallery.html'" style="cursor:pointer;background:var(--verde-oliva);color:white;display:flex;align-items:center;justify-content:center;">
+            <strong>Clique e veja mais fotos😁</strong>
+          </div>
+        </div>
+        <button class="carousel-nav right" onclick="scrollCarousel('fotos', 1)">&#8594;</button>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Linha do tempo</h2>
+      <div class="carousel-wrapper">
+        <button class="carousel-nav left" onclick="scrollCarousel('inicio', -1)">&#8592;</button>
+        <div class="carousel" id="carousel-inicio">
+          <div class="carousel-card">
+            <img src="images/20230830c.jpg" alt="Foto 1">
+            <p>Nosso dia</p>
+            <p>30/08/2023</p>
+          </div>
+          <div class="carousel-card">
+            <img src="images/20240831.jpg" alt="Foto 1">
+            <p>Nosso dia</p>
+            <p>30/08/2024</p>
+          </div>
+          <a class="carousel-card" style="cursor:pointer;background:var(--verde-oliva);color:white;display:flex;align-items:center;justify-content:center;">
+            <strong>E vão vir muuuuuuuuuito mais anos😁</strong>
+          </a>
+        <button class="carousel-nav right" onclick="scrollCarousel('inicio', 1)">&#8594;</button>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Músicas que lembram meu momoi</h2>
+      <div class="carousel-wrapper">
+        <button class="carousel-nav left" onclick="scrollCarousel('musicas', -1)">&#8592;</button>
+        <div class="carousel" id="carousel-musicas">
+          <div class="carousel-card">
+            <div class="vinyl"><img src="images/Ozzmosis.jpg" alt="Capa 1"></div>            
+            <h3>Just Want You</h3>
+            <p>Ozzy Osbourne</p>
+          </div>
+          <div class="carousel-card">
+            <div class="vinyl"><img src="images/mccartney.jpg" alt="Capa 2"></div>
+            <h3>My Valentine</h3>
+            <p>Paul McCartney</p>
+          </div>
+          <div class="carousel-card">
+            <div class="vinyl"><img src="images/fleet.jpeg" alt="Capa 3"></div>
+            <h3>You Make Love Fun</h3>
+            <p>Fleetwood Mac</p>
+          </div>
+          <div class="carousel-card">
+            <div class="vinyl"><img src="images/mirror.jpeg" alt="Capa 4"></div>
+            <h3>Mirrors</h3>
+            <p>Justin Timberlake</p>
+          </div>
+          <div class="carousel-card">
+            <div class="vinyl"><img src="images/thewayyoumakemefeel.png" alt="Capa 5"></div>
+            <h3>The Way You Make Me Feel</h3>
+            <p>Michael Jackson</p>
+          </div>
+          <a class="carousel-card" onclick="window.location.href='https://open.spotify.com/playlist/3NZ5nn2EghdkY7N4lRYBLL?si=eba863f944cb491f&pt=491f255674362128c74a154f0a2a321b'" style="cursor:pointer;background:var(--verde-oliva);color:white;display:flex;align-items:center;justify-content:center;">
+            <strong>Ouça a playlist completa no Spotify</strong>
+          </a>
+        </div>
+        <button class="carousel-nav right" onclick="scrollCarousel('musicas', 1)">&#8594;</button>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Que mandei pro meu momoi</h2>
+      <div class="carousel-wrapper">
+        <button class="carousel-nav left" onclick="scrollCarousel('enviados', -1)">←</button>
+        <div class="carousel" id="carousel-enviados">
+
+          <div class="carousel-card tall" onclick="openModal('image-viewer', 'images/20230612q.jpg')">
+            <img src="images/20230612s.jpg" alt="Cartão Foto">
+            <p>Dia dos namorados 2023</p>
+          </div>
+          <div class="carousel-card tall" onclick="openModal('image-viewer', 'images/20240515.jpg')">
+            <img src="images/20240515.jpg" alt="Cartão Foto">
+            <p>15/05/2024</p>
+          </div>
+          <!-- Ir para outra página -->
+          <div class="carousel-card tall" onclick="window.location.href='https://devgigifa.github.io/card'">
+            <img src="images/15062025.png" alt="Link externo">
+            <p>Dia dos namorados 2025</p>
+          </div>
+          <div class="carousel-card tall" onclick="openModal('video-viewer', 'images/lv_0_20240828214738~3.mp4')">
+            <img src="images/2025-08-29.png" alt="Cartão Vídeo">
+            <p>Vídeo surpresa</p>
+          </div>
+    
+        </div>
+        <button class="carousel-nav right" onclick="scrollCarousel('enviados', 1)">→</button>
+      </div>
+    </section>
+    
+    <section>
+      <h2 class="section-title">Que recebi do meu momoi</h2>
+      <div class="carousel-wrapper">
+        <button class="carousel-nav left" onclick="scrollCarousel('recebidos', -1)">←</button>
+        <div class="carousel" id="carousel-recebidos">
+    
+          <!-- Abrir vídeo -->
+          <div class="carousel-card tall" onclick="openModal('video-viewer', 'images/20231018-WA0120.mp4')">
+            <img src="images/1090680966-IMG-20230703-WA0000.jpg" alt="Cartão Vídeo">
+            <p>03/07/2023</p>
+          </div>
+          <div class="carousel-card tall" onclick="openModal('image-viewer', 'images/IMG_20240831_002554779_HDR.jpg')">
+            <img src="images/IMG_20240831_002554779_HDR.jpg" alt="Cartão Foto">
+            <p>FLOOORES 31/08/2024</p>
+          </div>
+          <div class="carousel-card tall" onclick="openModal('image-viewer', 'images/IMG-20230710-WA0010.jpg')">
+            <img src="images/IMG-20230710-WA0010.jpg" alt="Cartão Foto">
+            <p>10/07/2023</p>
+          </div>
+          <div class="carousel-card tall" onclick="openModal('image-viewer', 'images/IMG-20230823-WA0014.jpg')">
+            <img src="images/IMG-20230823-WA0014.jpg" alt="Cartão Foto">
+            <p>23/08/2023</p>
+          </div>
+        
+        </div>
+        <button class="carousel-nav right" onclick="scrollCarousel('recebidos', 1)">→</button>
+      </div>
+    </section>
+
+
+    <!-- Modais -->
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+    
+        <iframe id="pdf-viewer" class="modal-item" type="application/pdf"></iframe>
+        <img id="image-viewer" class="modal-item" />
+        <video id="video-viewer" class="modal-item" controls></video>
+        <div id="pdf-download" class="modal-item">
+          <iframe style="width:100%; height:300px;" type="application/pdf"></iframe>
+          <a id="download-link" href="#" download class="download-btn">Baixar figurinhas</a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>2023-2025 | 2 anos <br>∞♡ Giovanna e Nicolas ♡∞</footer>
+
+  <script>
+    function scrollCarousel(id, direction) {
+      const container = document.getElementById('carousel-' + id);
+      const scrollAmount = container.offsetWidth * 0.8;
+      container.scrollBy({ left: scrollAmount * direction, behavior: 'smooth' });
+    }
+
+  function scrollCarousel(id, direction) {
+    const container = document.getElementById('carousel-' + id);
+    const scrollAmount = container.offsetWidth * 0.8;
+    container.scrollBy({ left: scrollAmount * direction, behavior: 'smooth' });
+  }
+
+  function openModal(type, src, download) {
+    document.getElementById('modal').classList.remove('hidden');
+    const items = document.querySelectorAll('.modal-item');
+    items.forEach(item => item.style.display = 'none');
+
+    const element = document.getElementById(type);
+    if (type === 'pdf-viewer' || type === 'pdf-download') {
+      element.src = src;
+    } else if (type === 'image-viewer') {
+      element.src = src;
+    } else if (type === 'video-viewer') {
+      element.src = src;
+    }
+
+    if (type === 'pdf-download' && download) {
+      document.getElementById('download-link').href = download;
+    }
+
+    element.style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').classList.add('hidden');
+    const items = document.querySelectorAll('.modal-item');
+    items.forEach(item => {
+      if (item.tagName === 'VIDEO') item.pause();
+      item.style.display = 'none';
+    });
+  }
+
+</script>
+</body>
+</html>
