@@ -4,20 +4,12 @@ html, body {
   font-family: 'Quicksand', sans-serif;
   background: var(--fundo-claro);
   color: var(--texto-escuro);
-  display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-main {
-  flex: 1;
-  padding: 1rem;
-  box-sizing: border-box;
-}
-
 h1 {
   color: var(--lilas);
-  margin: 2rem 0 1rem;
   text-align: center;
 }
 
@@ -25,7 +17,6 @@ main, .gallery, #albums {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem; /* deixa espaçamento lateral */
   box-sizing: border-box;
 }
 
@@ -59,14 +50,20 @@ main, .gallery, #albums {
 @media (max-width: 768px) {
   .gallery,
   .album-photos {
-    grid-template-columns: repeat(2, 1fr); /* 2 fotos por linha */
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 
 @media (max-width: 480px) {
   .gallery,
   .album-photos {
-    grid-template-columns: 1fr; /* 1 foto por linha */
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  header{
+    font-size: 20px;
+  }
+  h1{
+    font-size: 25px;
   }
 }
 

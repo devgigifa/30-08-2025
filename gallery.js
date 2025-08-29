@@ -177,20 +177,20 @@ document.addEventListener('DOMContentLoaded', () => {
         if (modal) modal.addEventListener('click', e => { if (e.target === modal) modal.style.display = 'none'; });
       
         // Filtros (mantive sua lógica)
-        function applyFilters() {
-          const text = (filterText && filterText.value) ? filterText.value.toLowerCase() : '';
-          const date = filterDate ? filterDate.value : '';
+        // function applyFilters() {
+        //   const text = (filterText && filterText.value) ? filterText.value.toLowerCase() : '';
+        //   const date = filterDate ? filterDate.value : '';
       
-          document.querySelectorAll('.gallery img, .album-photos img').forEach(img => {
-            const alt = (img.alt || '').toLowerCase();
-            const album = (img.dataset.album || '').toLowerCase();
-            const matchText = alt.includes(text) || album.includes(text);
-            const matchDate = !date || img.dataset.date === date;
-            img.style.display = (matchText && matchDate) ? '' : 'none';
-          });
-        }
-        if (filterText) filterText.addEventListener('input', applyFilters);
-        if (filterDate) filterDate.addEventListener('input', applyFilters);
+        //   document.querySelectorAll('.gallery img, .album-photos img').forEach(img => {
+        //     const alt = (img.alt || '').toLowerCase();
+        //     const album = (img.dataset.album || '').toLowerCase();
+        //     const matchText = alt.includes(text) || album.includes(text);
+        //     const matchDate = !date || img.dataset.date === date;
+        //     img.style.display = (matchText && matchDate) ? '' : 'none';
+        //   });
+        // }
+        // if (filterText) filterText.addEventListener('input', applyFilters);
+        // if (filterDate) filterDate.addEventListener('input', applyFilters);
       
         // Inicializa: galeria geral primeiro, depois álbuns
         renderGallery();

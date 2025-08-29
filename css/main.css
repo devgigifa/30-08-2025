@@ -137,6 +137,6 @@
 
   @media (max-width: 480px) {
     .carousel-card {
-      flex: 0 0 100%;
+      flex: 0 0 calc((100% - 1rem) / 2);
     }
   }
