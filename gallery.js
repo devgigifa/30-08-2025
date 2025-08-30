@@ -81,7 +81,6 @@ document.addEventListener('DOMContentLoaded', () => {
       { id: 85, src: 'images/IMG-20250309-WA0009.jpg', date: '1980-01-01', caption: '', album: 'Despedida e CARBONARA' },
       { id: 86, src: 'images/IMG-20250403-WA0029.jpg', date: '1980-01-01', caption: '', album: 'Nós sendo fofin' },
       { id: 87, src: 'images/IMG-20250610-WA0001.jpg', date: '1980-01-01', caption: 'A GENTE CORRENDO PRA TIRAR FOTO. Conseguimos com o Andreoli', album: 'Viagem Curitiba' },
-      { id: 88, src: 'images/IMG-20250714-WA0008~2.jpg', date: '2025-07-14', caption: '', album: 'Despedida e CARBONARA' },
       // { id: 89, src: 'images/Ιν_0_20240828214738-3.mp4', date: '2024-12-31', caption: '', album: '' },
       { id: 93, src: 'images/Screenshot_20231201-143826.png', date: '2024-12-31', caption: '', album: 'Nós sendo fofin' },
       { id: 94, src: 'images/Screenshot_20231218_140058_Instagram.jpg', date: '2023-12-18', caption: '', album: 'Balneário Camboriú' },
@@ -94,7 +93,6 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 3, src: 'images/IMG_20250608_202151531.jpg', date: '2025-06-08', caption: 'Show do Kiko e Marty', album: 'Viagem Curitiba' },
         { id: 4, src: 'images/IMG_20250525_122129701.jpg', date: '2025-05-25', caption: 'Mirante', album: 'Viagem Joinville' },
         { id: 5, src: 'images/IMG_20250525_122147454.jpg', date: '2025-05-25', caption: 'Mirante', album: 'Viagem Joinville' },
-        { id: 6, src: 'images/IMG_20250525_122737724.jpg', date: '2025-05-25', caption: 'Mirante', album: 'Viagem Joinville' },
         { id: 6, src: 'images/IMG_20250525_122737724.jpg', date: '2025-05-25', caption: 'Mirante', album: 'Viagem Joinville' },
       ];
         
